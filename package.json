@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "three": "^0.160.0"
+  },
+  "dependencies": {
+    "wallpaper": "^7.2.0"
   }
 }

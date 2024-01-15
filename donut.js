@@ -7,15 +7,12 @@ const main = () => {
   const renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
-
   const scene = new THREE.Scene();
-
   const aspect = 2;
   const fov = 60;
   const near = 0.1;
   const far = 200;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-
   const radius = 5;
   const tubeRadius = 3;
   const radialSegments = 100;
@@ -27,11 +24,9 @@ const main = () => {
     tubularSegments
   );
   const material = new THREE.MeshNormalMaterial();
-
   const donut = new THREE.Mesh(geometry, material);
-
-  scene.add(donut);
   camera.position.z = 30;
+  scene.add(donut);
   donutAnimation(donut, renderer, scene, camera);
 };
 const donutAnimation = (donut, renderer, scene, camera) => {
