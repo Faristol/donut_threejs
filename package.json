@@ -1,0 +1,14 @@
+{
+  "name": "donut_threejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "donut.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "three": "^0.160.0"
+  }
+}
